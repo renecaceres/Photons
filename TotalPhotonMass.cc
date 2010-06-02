@@ -49,7 +49,7 @@
                 mass=sqrt(pow(sqrt(px[1]*px[1]+py[1]*py[1]+pz[1]*pz[1])+sqrt(px[2]*px[2]+py[2]*py[2]+pz[2]*pz[2]),2)-pow(px[1]+px[2],2)-pow(py[1]+py[2],2)-pow(pz[1]+pz[2],2));
                 tree_photon->Fill();
                 h1->Fill(mass);
-                h2->Fill(etot[1]+etot[2]);
+                h2->Fill(sqrt(pow(etot[1],2)+pow(etot[2],2)));
             }
         }
     }
